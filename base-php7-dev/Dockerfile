@@ -1,9 +1,9 @@
 # create a file named Dockerfile
-FROM strong-alpine-nginx-php7-s6:latest
+FROM base-alpine-nginx-php7-s6:latest
 
 ENV SERVICE_PORT 80
-ENV NGINX_CONF /var/www/StrongFramework/Config/nginx
-ENV PHP_CONF /var/www/StrongFramework/Config/php
+ENV NGINX_CONF /var/www/BasePlatform/Config/nginx
+ENV PHP_CONF /var/www/BasePlatform/Config/php
 
 VOLUME /var/www/app
 VOLUME /etc/nginx/conf.d
